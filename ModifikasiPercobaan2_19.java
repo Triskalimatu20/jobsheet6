@@ -20,8 +20,7 @@ public class ModifikasiPercobaan2_19 {
         System.out.println("=========================================");
         System.out.print("Masukkan angka dari menu yang dipilih = ");
         pilihan_menu = input19.nextInt();
-        input19.nextLine(); // Mengonsumsi karakter newline
-
+        input19.nextLine();
         System.out.print("Apakah punya member (y/n) ? = ");
         member = input19.nextLine();
         System.out.print("Jenis pembayaran (QRIS/Tunai) ? = ");
@@ -79,7 +78,7 @@ public class ModifikasiPercobaan2_19 {
             return;
         }
 
-        // Pengecekan jenis pembayaran melalui QRIS
+        
         if (jenis_pembayaran.equalsIgnoreCase("QRIS")) {
             total_bayar = total_bayar - potongan_qris;
             System.out.println("Mendapatkan potongan Rp. 1.000 karena pembayaran via QRIS.");
